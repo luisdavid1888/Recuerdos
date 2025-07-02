@@ -1,0 +1,267 @@
+body {
+    background: #464545;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 40px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bb-bookblock {
+    width: 600px;
+    height: 480px;
+    margin: 0 auto;
+    position: relative;
+    background: #ececec;
+    box-shadow: 0 12px 20px -10px rgba(255, 255, 255, 0.4);
+}
+
+.page {
+    padding: 40px;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page.cover {
+    background: #23180d;
+    color: #fffbe8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
+    background-size: 340px 340px;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    box-shadow: 0 0 0 10px #a98e71 inset;
+    text-shadow: 0 2px 8px #000a;
+}
+
+.page.cover h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.page.cover p {
+    font-style: italic;
+    margin-top: 1em;
+}
+
+.page h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.page p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.page img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #a98e71;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #cc9c6f;
+}
+
+.credits {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.credits h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #cc9c6f;
+    font-family: 'Georgia', serif;
+}
+
+.credits p {
+    margin: 8px 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.credits strong {
+    color: #cc9c6f;
+}
+
+/* --- EFECTO ZOOM EN IMÁGENES --- */
+.zoom-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.2s;
+}
+.zoomed-img {
+    max-width: 98vw;
+    max-height: 98vh;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    background: #fff;
+    animation: zoomIn 0.2s;
+}
+body.zoom-active {
+    overflow: hidden;
+}
+@keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0.5; } to { transform: scale(1); opacity: 1; }
+}
+/* --- FIN EFECTO ZOOM --- */
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.galeria-fotos img {
+    width: 48%;
+    max-width: 160px;
+    max-height: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0002;
+    object-fit: cover;
+    height: auto;
+    transition: transform 0.2s;
+}
+.galeria-fotos img:hover {
+    transform: scale(1.05);
+}
+#galeria-video {
+    max-width: 95vw;
+    width: 100%;
+    height: auto;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #0003;
+}
+
+@media (max-width: 900px) {
+    .bb-bookblock {
+        width: 98vw;
+        height: 60vw;
+        max-width: 600px;
+        max-height: 480px;
+    }
+}
+@media (max-width: 768px) {
+    .bb-bookblock {
+        height: 400px;
+        width: 90vw;
+        max-width: 480px;
+    }
+    .page {
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 600px) {
+    .bb-bookblock {
+        width: 99vw;
+        height: 98vh;
+        max-width: 480px;
+        max-height: 99vh;
+        aspect-ratio: 3/5;
+        min-height: 420px;
+    }
+    .page {
+        padding: 16px 3vw;
+    }
+    .page h1 {
+        font-size: 2.4em;
+    }
+    .page h2 {
+        font-size: 1.3em;
+    }
+    .page p {
+        font-size: 1.1em;
+    }
+    .galeria-fotos {
+        gap: 12px;
+    }
+    .galeria-fotos img {
+        width: 48%;
+        max-width: 160px;
+        max-height: 120px;
+    }
+    nav button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}
+@media (max-width: 480px) {
+    .bb-bookblock {
+        height: 90vh;
+        width: 99vw;
+        max-width: 99vw;
+        margin: 0 auto;
+    }
+    .page {
+        padding: 10px 2vw;
+    }
+}
+@media (max-width: 360px) {
+    .bb-bookblock {
+        height: 70vh;
+        width: 99vw;
+        max-width: 99vw;
+    }
+    .page {
+        padding: 6px 2vw;
+    }
+}
+@media (max-width: 400px) {
+    .bb-bookblock {
+        max-width: 99vw;
+        min-height: 180px;
+        aspect-ratio: 3/5;
+    }
+}
