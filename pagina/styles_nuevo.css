@@ -207,11 +207,11 @@ body.zoom-active {
 @media (max-width: 600px) {
     .bb-bookblock {
         width: 99vw;
-        height: 80vh;
+        height: 65vh;
         max-width: 480px;
-        max-height: 80vh;
+        max-height: 65vh;
         aspect-ratio: 3/5;
-        min-height: 320px;
+        min-height: 220px;
     }
     .page {
         padding: 16px 3vw;
