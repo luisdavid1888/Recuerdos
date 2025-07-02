@@ -1,0 +1,40 @@
+[CREDITOS]
+creador="Señor de Muruhuay"
+contacto=900432978 o 935817987
+direccion=Provincia de Chupaca
+
+[PAGINA_PRINCIPAL]
+titulo=Biografía de La Familia
+subtitulo=Una historia de amor, lucha y perseverancia
+
+[PAGINA_1]
+titulo=Los Inicios
+contenido=La historia de nuestra familia comenzó con el matrimonio de Juan y María en 1980
+imagen=boda.png
+
+[PAGINA_2]
+titulo=La Llegada de los Hijos
+contenido=Pronto, la familia creció con la llegada de sus dos hijos: Carlos y Ana.
+imagen=hijos.png
+
+[PAGINA_3]
+titulo=Retos y Superación
+contenido=Como toda familia, enfrentaron desafíos. Sin embargo, su unidad y fe les permitieron superar cada obstáculo.
+imagen=unida.png
+
+[PAGINA_4]
+titulo=Logros y Celebraciones
+contenido=Celebraron juntos los logros de cada miembro, desde graduaciones hasta ascensos laborales.
+imagen=logros.png
+[PAGINA_5]
+titulo=El Legado
+contenido=Hoy, la familia sigue creciendo con la llegada de nietos, manteniendo vivos los valores y tradiciones.
+imagen=nietos.png
+
+[PAGINA_6]
+titulo=Galería de Recuerdos
+contenido=
+imagen=recuerdo1.png
+
+[PAGINA_FINAL]
+contenido=Dedicado a las futuras generaciones.

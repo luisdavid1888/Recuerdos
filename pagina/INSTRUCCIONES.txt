@@ -1,0 +1,69 @@
+INSTRUCCIONES PARA PERSONALIZAR LA BIOGRAFÍA FAMILIAR
+========================================================
+
+¡Felicidades! Tu página web ahora incluye una sección de créditos y es completamente configurable.
+
+CÓMO PERSONALIZAR EL CONTENIDO:
+-------------------------------
+
+1. EDITAR LOS CRÉDITOS:
+   - Abre el archivo "config.txt"
+   - En la sección [CREDITOS], cambia:
+     * creador=Señor de Muruhuay (ya está configurado)
+     * contacto=Pon aquí tu número de teléfono
+     * email=Pon aquí tu email (opcional)
+     * direccion=Pon aquí tu dirección (opcional)
+
+2. CAMBIAR EL TÍTULO PRINCIPAL:
+   - En la sección [PAGINA_PRINCIPAL]:
+     * titulo=Cambia aquí el título principal
+     * subtitulo=Cambia aquí el subtítulo
+
+3. PERSONALIZAR CADA PÁGINA:
+   - Para cada página (PAGINA_1, PAGINA_2, etc.):
+     * titulo=Título de la página
+     * contenido=Texto que aparecerá en la página
+     * imagen=URL de la imagen (puedes usar enlaces de internet)
+
+4. CAMBIAR LA PÁGINA FINAL:
+   - En [PAGINA_FINAL]:
+     * contenido=Mensaje final del libro
+
+EJEMPLO DE PERSONALIZACIÓN:
+--------------------------
+
+[CREDITOS]
+creador=Señor de Muruhuay
+contacto=+51 999 888 777
+email=contacto@ejemplo.com
+direccion=Lima, Perú
+
+[PAGINA_PRINCIPAL]
+titulo=Historia de Mi Familia
+subtitulo=Nuestros recuerdos más preciados
+
+[PAGINA_1]
+titulo=Nuestros Abuelos
+contenido=Todo comenzó con nuestros queridos abuelos...
+imagen=https://ejemplo.com/foto-abuelos.jpg
+
+NOTAS IMPORTANTES:
+-----------------
+
+1. Guarda el archivo config.txt después de hacer cambios
+2. Si usas la página desde un servidor web (no abriendo el archivo directamente), 
+   los cambios se cargarán automáticamente
+3. Si abres el archivo directamente en el navegador, los créditos aparecerán 
+   con valores por defecto debido a restricciones de seguridad del navegador
+4. Para mejores resultados, usa un servidor web local o sube los archivos a un hosting
+
+ARCHIVOS DEL PROYECTO:
+---------------------
+
+- index.html: Página principal (no necesitas editarla)
+- config.txt: Archivo de configuración (EDITA ESTE ARCHIVO)
+- script.js: Funcionalidad (no necesitas editarla)
+- styles.css: Estilos (no necesitas editarla)
+- INSTRUCCIONES.txt: Este archivo de ayuda
+
+¡Disfruta personalizando tu biografía familiar!

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=900, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" id="main-viewport">
+    <title>Biografía de La Familia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codrops/BookBlock@latest/css/bookblock.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      // Forzar modo escritorio en móviles
+      (function() {
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+          var viewport = document.querySelector('meta[name=viewport]');
+          if (viewport) {
+            viewport.setAttribute('content', 'width=900, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+          }
+          // Opcional: mostrar mensaje
+          var aviso = document.createElement('div');
+          aviso.textContent = 'Vista de escritorio forzada para mejor experiencia. Puedes girar tu dispositivo para ver mejor el contenido.';
+          aviso.style.position = 'fixed';
+          aviso.style.bottom = '10px';
+          aviso.style.left = '50%';
+          aviso.style.transform = 'translateX(-50%)';
+          aviso.style.background = 'rgba(0,0,0,0.8)';
+          aviso.style.color = '#fffbe8';
+          aviso.style.padding = '8px 18px';
+          aviso.style.borderRadius = '8px';
+          aviso.style.fontSize = '1em';
+          aviso.style.zIndex = 99999;
+          aviso.style.boxShadow = '0 2px 8px #0006';
+          document.addEventListener('DOMContentLoaded', function() {
+            document.body.appendChild(aviso);
+            setTimeout(function(){ aviso.remove(); }, 5000);
+          });
+        }
+      })();
+    </script>
+</head>
+<body>
+    <div class="bb-bookblock" id="book">
+        <div class="bb-item">
+            <div class="page cover">
+                <h1>Biografía de La Familia</h1>
+                <p>Una historia de amor, lucha y perseverancia.</p>
+            </div>
+        </div>
+        <div class="bb-item">
+            <div class="page">
+                <!-- Música de fondo solo en esta página -->
+                <audio id="bg-music" src="musica.mp3" loop autoplay style="display:none"></audio>
+                <h2>Los Inicios</h2>
+                <p>La historia de nuestra familia comenzó con el matrimonio de <strong>Juan</strong> y <strong>María</strong> en 1980.</p>
+                <img src="http://via.placeholder.com/300x200/FFC0CB/000000?text=Boda+de+Juan+y+María" alt="Boda de Juan y María">
+            </div>
+        </div>
+        <div class="bb-item">
+            <div class="page">
+                <h2>La Llegada de los Hijos</h2>
+                <p>Pronto, la familia creció con la llegada de sus dos hijos: <strong>Carlos</strong> y <strong>Ana</strong>.</p>
+                <img src="http://via.placeholder.com/300x200/ADD8E6/000000?text=Nacimiento+de+Carlos+y+Ana" alt="Nacimiento de Carlos y Ana">
+            </div>
+        </div>
+        <div class="bb-item">
+            <div class="page">
+                <h2>Retos y Superación</h2>
+                <p>Como toda familia, enfrentaron desafíos. Sin embargo, su unidad y fe les permitieron superar cada obstáculo.</p>
+                <img src="http://via.placeholder.com/300x200/90EE90/000000?text=Familia+Unida" alt="Familia Unida">
+            </div>
+        </div>
+        <div class="bb-item">
+            <div class="page">
+                <h2>Logros y Celebraciones</h2>
+                <p>Celebraron juntos los logros de cada miembro, desde graduaciones hasta ascensos laborales.</p>
+                <img src="http://via.placeholder.com/300x200/FFFFE0/000000?text=Celebración+Familiar" alt="Celebración Familiar">
+            </div>
+        </div>
+        <div class="bb-item">
+            <div class="page">
+                <h2>El Legado</h2>
+                <p>Hoy, la familia sigue creciendo con la llegada de nietos, manteniendo vivos los valores y tradiciones.</p>
+                <img src="http://via.placeholder.com/300x200/DDA0DD/000000?text=Familia+con+Nietos" alt="Familia con Nietos">
+            </div>
+        </div>
+        <div class="bb-item">
+            <div class="page">
+                <h2>Galería de Recuerdos</h2>
+                <p>Un pequeño tesoro de nuestros momentos más preciados.</p>
+                <video id="galeria-video" src="video_recuerdo.mp4" controls style="max-width:90%;margin-bottom:18px;border-radius:10px;box-shadow:0 4px 16px #0003;" poster="recuerdo1.png"></video>
+            </div>
+        </div>
+        <div class="bb-item">
+            <div class="page">
+                <h2>Galería de Recuerdos</h2>
+                <div class="galeria-fotos" style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+                    <img src="recuerdo1.png" alt="Recuerdo 1" style="max-width:180px;max-height:140px;border-radius:8px;box-shadow:0 2px 8px #0002;object-fit:cover;">
+                    <img src="recuerdo2.png" alt="Recuerdo 2" style="max-width:180px;max-height:140px;border-radius:8px;box-shadow:0 2px 8px #0002;object-fit:cover;">
+                    <img src="boda.png" alt="Boda" style="max-width:180px;max-height:140px;border-radius:8px;box-shadow:0 2px 8px #0002;object-fit:cover;">
+                    <img src="hijos.png" alt="Hijos" style="max-width:180px;max-height:140px;border-radius:8px;box-shadow:0 2px 8px #0002;object-fit:cover;">
+                    <img src="nietos.png" alt="Nietos" style="max-width:180px;max-height:140px;border-radius:8px;box-shadow:0 2px 8px #0002;object-fit:cover;">
+                    <img src="logros.png" alt="Logros" style="max-width:180px;max-height:140px;border-radius:8px;box-shadow:0 2px 8px #0002;object-fit:cover;">
+                    <img src="unida.png" alt="Unida" style="max-width:180px;max-height:140px;border-radius:8px;box-shadow:0 2px 8px #0002;object-fit:cover;">
+                </div>
+            </div>
+        </div>
+        <div class="bb-item">
+            <div class="page cover">
+                <p>Dedicado a las futuras generaciones.</p>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <button id="bb-nav-prev">Anterior</button>
+        <button id="bb-nav-next">Siguiente</button>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/gh/codrops/BookBlock@latest/js/modernizr.custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/codrops/BookBlock@latest/js/jquery.bookblock.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
