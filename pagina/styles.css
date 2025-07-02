@@ -76,12 +76,16 @@ body {
 }
 
 .page img {
-    width: 900px;
-    max-width: 70%;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
@@ -174,14 +178,48 @@ body.zoom-active {
     margin-bottom: 10px;
 }
 .galeria-fotos img {
-    max-width: 180px;
-    max-height: 140px;
+    width: 48%;
+    max-width: 160px;
+    max-height: 120px;
     border-radius: 8px;
     box-shadow: 0 2px 8px #0002;
     object-fit: cover;
-    width: 100%;
     height: auto;
     transition: transform 0.2s;
+}
+@media (max-width: 600px) {
+    .bb-bookblock {
+        width: 99vw;
+        height: auto;
+        max-width: 350px;
+        max-height: 90vh;
+        aspect-ratio: 3/4;
+        min-height: 320px;
+    }
+    .page {
+        padding: 10px 2vw;
+    }
+    .page h1 {
+        font-size: 2em;
+    }
+    .page h2 {
+        font-size: 1.2em;
+    }
+    .page p {
+        font-size: 1em;
+    }
+    .galeria-fotos {
+        gap: 8px;
+    }
+    .galeria-fotos img {
+        width: 48%;
+        max-width: 120px;
+        max-height: 90px;
+    }
+    nav button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }
 .galeria-fotos img:hover {
     transform: scale(1.05);
