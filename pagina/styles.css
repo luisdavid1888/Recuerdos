@@ -190,35 +190,35 @@ body.zoom-active {
 @media (max-width: 600px) {
     .bb-bookblock {
         width: 99vw;
-        height: auto;
-        max-width: 350px;
-        max-height: 90vh;
-        aspect-ratio: 3/4;
-        min-height: 320px;
+        height: 92vh;
+        max-width: 420px;
+        max-height: 98vh;
+        aspect-ratio: 3/5;
+        min-height: 380px;
     }
     .page {
-        padding: 10px 2vw;
+        padding: 14px 3vw;
     }
     .page h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
     .page h2 {
-        font-size: 1.2em;
+        font-size: 1.25em;
     }
     .page p {
-        font-size: 1em;
+        font-size: 1.05em;
     }
     .galeria-fotos {
-        gap: 8px;
+        gap: 10px;
     }
     .galeria-fotos img {
         width: 48%;
-        max-width: 120px;
-        max-height: 90px;
+        max-width: 140px;
+        max-height: 110px;
     }
     nav button {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 15px;
+        padding: 10px 16px;
     }
 }
 .galeria-fotos img:hover {
